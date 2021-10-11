@@ -58,7 +58,7 @@ By solving above equation, we are getting the intersection point of line (i) and
 Let's call it as M:
 \\
 
-M = \myvec{X_1\\Y_1} = \myvec{-6\\2.5} \qquad (1)\\
+M = \myvec{X_1\\Y_1} = \myvec{-6\\-2.5} \qquad (1)\\
 \\
 In the same way, intersection of line (ii) and (iii) is,\\
 \\
@@ -94,29 +94,36 @@ N = \myvec{8.571\\-8.571}, O = \myvec{4.260\\1.775}\\
 
 Difference between vectors M and O:\\
 \\
-M = \myvec{-6\\2.5}, O = \myvec{4.260\\1.775}\\
+M = \myvec{-6\\-2.5}, O = \myvec{4.260\\1.775}\\
 \\
-0-M = \myvec{10.26\\-0.725}\\
-\norm{\vec{O}-\vec{M}} = \sqrt{(10.26^2 + -0.725^2)}\\
-\norm{\vec{O}-\vec{M}} = 10.285 \qquad\qquad (\vec{D_2})\\
+0-M = \myvec{10.26\\4.275}\\
+\norm{\vec{O}-\vec{M}} = \sqrt{(10.260^2 + 4.275^2)}\\
+\norm{\vec{O}-\vec{M}} = 11.115 \qquad\qquad (\vec{D_2})\\
 \\
 
 Difference between vectors M and N:\\
 \\
-M = \myvec{-6\\2.5}, N = \myvec{8.571\\-8.571}\\
+M = \myvec{-6\\-2.5}, N = \myvec{8.571\\-8.571}\\
 \\
-N-M = \myvec{14.571\\-11.071}\\
-\norm{\vec{N}-\vec{M}} = \sqrt{(14.571^2 + - 11.071^2)}\\
-\norm{\vec{N}-\vec{M}} = 18.299 \qquad\qquad (\vec{D_3})\\
+N-M = \myvec{14.571\\-6.071}\\
+\norm{\vec{N}-\vec{M}} = \sqrt{(14.571^2 + 6.071^2)}\\
+\norm{\vec{N}-\vec{M}} = 15.785 \qquad\qquad (\vec{D_3})\\
 \\
 
 Formula for finding in-center (I) of triangle with three given coordinates is,\\
 $$ \bigg(\frac{D_1X_1 + D_2X_2 + D_3X_3}{D_1+D_2+D_3} ,\quad\frac{D_1Y_1 + D_2Y_2 + D_3Y_3}{D_1+D_2+D_3}\bigg) $$
 \\
 By putting all the values,\\
-$$ \bigg(\frac{(11.207)(-6) + (10.285)(8.571) + (18.299)(4.260)}{11.207+10.285+18.299} ,$$
-$$\quad\frac{(11.207)(2.5) + (10.285)(-8.571) + (18.299)(1.775)}{11.207+10.285+18.299}\bigg) $$
+$$ \bigg(\frac{(11.207)(-6) + (11.115)(8.571) + (15.785)(4.260)}{11.207+11.115+15.785} ,$$
+$$\quad\frac{(11.207)(-2.5) + (11.115)(-8.571) + (15.785)(1.775)}{11.207+11.115+15.785}\bigg) $$
 \\ \\
-I = \myvec{2.485\\-0.695}
+I = \myvec{2.500\\-2.499}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\columnwidth]{graph.png}
+    \caption{Triangle created by three lines}
+    \label{fig:}
+\end{figure}
 
 \end{document}
